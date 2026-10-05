@@ -14,6 +14,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Clamp invalid April Fools Mode config setting values to "None"
 - Bump actions/setup-dotnet from 5 to 6 by [@dependabot] ([#144])
 
+## [1.3.2] - 2026-10-05
+
+This release is compatible with Among Us version `19.0.0` (`2026.9.29`).
+
+### Changed
+
+- Update the game libraries to `2026.9.29` for Among Us v19.0.0.
+
+### Fixed
+
+- Restore cosmetic unlocking with v19's read-only cosmetic collections.
+
 ## [1.3.1] - 2026-07-13
 
 This release is compatible with Among Us version `17.4.0` (`2026.6.5`).

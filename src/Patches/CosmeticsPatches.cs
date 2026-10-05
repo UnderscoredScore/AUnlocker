@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using HarmonyLib;
 
 namespace AUnlocker.Patches;
@@ -6,7 +7,6 @@ namespace AUnlocker.Patches;
 [HarmonyPatch(typeof(HatManager), nameof(HatManager.Initialize))]
 public static class HatManager_Initialize
 {
-    // https://github.com/scp222thj/MalumMenu/blob/main/src/Cheats/CosmeticsUnlocker.cs
 
     /// <summary>
     /// Ensure the patch is not applied on Android.
@@ -25,34 +25,34 @@ public static class HatManager_Initialize
     {
         if (!AUnlocker.UnlockCosmetics.Value) return;
 
-        foreach (var bundle in __instance.allBundles)
+        foreach (var bundle in (IEnumerable<BundleData>)__instance.AllBundles)
         { bundle.Free = true; }
 
-        foreach (var featuredBundle in __instance.allFeaturedBundles)
+        foreach (var featuredBundle in (IEnumerable<BundleData>)__instance.AllFeaturedBundles)
         { featuredBundle.Free = true; }
 
-        foreach (var featuredCube in __instance.allFeaturedCubes)
+        foreach (var featuredCube in (IEnumerable<CosmicubeData>)__instance.AllFeaturedCubes)
         { featuredCube.Free = true; }
 
-        foreach (var featuredItem in __instance.allFeaturedItems)
+        foreach (var featuredItem in (IEnumerable<CosmeticData>)__instance.AllFeaturedItems)
         { featuredItem.Free = true; }
 
-        foreach (var hat in __instance.allHats)
+        foreach (var hat in (IEnumerable<HatData>)__instance.AllHats)
         { hat.Free = true; }
 
-        foreach (var nameplate in __instance.allNamePlates)
+        foreach (var nameplate in (IEnumerable<NamePlateData>)__instance.AllNamePlates)
         { nameplate.Free = true; }
 
-        foreach (var pet in __instance.allPets)
+        foreach (var pet in (IEnumerable<PetData>)__instance.AllPets)
         { pet.Free = true; }
 
-        foreach (var skin in __instance.allSkins)
+        foreach (var skin in (IEnumerable<SkinData>)__instance.AllSkins)
         { skin.Free = true; }
 
-        foreach (var starBundle in __instance.allStarBundles)
+        foreach (var starBundle in (IEnumerable<StarBundle>)__instance.AllStarBundles)
         { starBundle.price = 0; }
 
-        foreach (var visor in __instance.allVisors)
+        foreach (var visor in (IEnumerable<VisorData>)__instance.AllVisors)
         { visor.Free = true; }
     }
 }
