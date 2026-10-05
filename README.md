@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./icon.png">
+  <img src="./AUnlocker.png">
 </p>
 
 <p align="center">
@@ -7,13 +7,13 @@
     <img src="https://img.shields.io/badge/license-GPL-yellow.svg?style=plastic&logo=GNU&label=License">
   </a>
   <a href="https://github.com/astra1dev/AUnlocker/actions/workflows/main.yml">
-    <img src="https://github.com/astra1dev/AUnlocker/actions/workflows/main.yml/badge.svg?event=push&style=plastic">
+    <img src="https://github.com/UnderscoredScore/AUnlocker/actions/workflows/main.yml/badge.svg?event=push&style=plastic">
   </a>
   <a href="../../releases">
-    <img src="https://img.shields.io/github/downloads/astra1dev/AUnlocker/total.svg?style=plastic&color=red">
+    <img src="https://img.shields.io/github/downloads/UnderscoredScore/AUnlocker/total.svg?style=plastic&color=red">
   </a>
   <a href="../../releases/latest">
-    <img src="https://img.shields.io/github/downloads/astra1dev/AUnlocker/latest/total?style=plastic">
+    <img src="https://img.shields.io/github/downloads/UnderscoredScore/AUnlocker/latest/total?style=plastic">
   </a>
 </p>
 
