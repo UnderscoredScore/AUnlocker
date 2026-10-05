@@ -99,7 +99,7 @@ The table below lists the most recent AUnlocker release for each Among Us versio
   - **Itch.io:** Open the Itch.io app → Right-click Among Us in your library → <kbd>Manage</kbd> → <kbd>Open folder in Explorer</kbd>.
   - **Xbox App / Microsoft Store:** Open the Xbox app → Right-click Among Us in your library → <kbd>Manage</kbd> → <kbd>Files</kbd> → <kbd>Browse...</kbd>
 - Your game folder should look like this after installation:
-<img src="https://github.com/astra1dev/AUnlocker/assets/90265231/14226f03-a003-4efc-b27b-6df53fb394d6" width=410 height=240>
+<img src="https://github.com/UnderscoredScore/AUnlockerr/assets/90265231/14226f03-a003-4efc-b27b-6df53fb394d6" width=410 height=240>
 
 - Launch Among Us. The first launch will take **MUCH** longer, so don't worry if you have to wait a few minutes.
 
@@ -122,7 +122,7 @@ Requirements:
 
 ```bash
 # Clone the repository
-git clone https://github.com/astra1dev/AUnlocker
+git clone https://github.com/UnderscoredScore/AUnlocker
 cd AUnlocker
 
 # Build the project
