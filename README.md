@@ -6,7 +6,7 @@
   <a href="https://www.gnu.org/licenses/gpl-3.0.html">
     <img src="https://img.shields.io/badge/license-GPL-yellow.svg?style=plastic&logo=GNU&label=License">
   </a>
-  <a href="https://github.com/astra1dev/AUnlocker/actions/workflows/main.yml">
+  <a href="https://github.com/UnderscoredScore/AUnlocker/actions/workflows/main.yml">
     <img src="https://github.com/UnderscoredScore/AUnlocker/actions/workflows/main.yml/badge.svg?event=push&style=plastic">
   </a>
   <a href="../../releases">
@@ -68,44 +68,62 @@ The table below lists the most recent AUnlocker release for each Among Us versio
 |    Among Us Version     |          AUnlocker Version          |
 |:-----------------------:|:-----------------------------------:|
 | `19.0.0` (`2026.9.29`)  | [v1.3.2](../../releases/tag/v1.3.2) |
-| `18.0.0` (`2026.8.18`)  | [v1.3.1](../../releases/tag/v1.3.1) |
-| `17.4.0` (`2026.6.5`)   | [v1.3.1](../../releases/tag/v1.3.1) |
-| `17.3.0` (`2026.3.31`)  | [v1.3.0](../../releases/tag/v1.3.0) |
-| `17.2.2` (`2026.3.17`)  | [v1.3.0](../../releases/tag/v1.3.0) |
-| `17.2.1` (`2026.2.24`)  | [v1.3.0](../../releases/tag/v1.3.0) |
-| `17.2.0` (`2026.2.17`)  | [v1.3.0](../../releases/tag/v1.3.0) |
-| `17.1.0` (`2025.11.18`) | [v1.3.0](../../releases/tag/v1.3.0) |
-| `17.0.1` (`2025.10.14`) | [v1.2.2](../../releases/tag/v1.2.2) |
-|  `17.0.0` (`2025.9.9`)  | [v1.2.2](../../releases/tag/v1.2.2) |
-| `16.1.0` (`2025.6.10`)  | [v1.2.2](../../releases/tag/v1.2.2) |
-| `16.0.5` (`2025.5.20`)  | [v1.2.0](../../releases/tag/v1.2.0) |
-| `16.0.2` (`2025.3.31`)  | [v1.1.8](../../releases/tag/v1.1.8) |
-| `16.0.0` (`2025.3.25`)  | [v1.1.8](../../releases/tag/v1.1.8) |
-|      `2024.11.26`       | [v1.1.7](../../releases/tag/v1.1.7) |
-|      `2024.10.29`       | [v1.1.7](../../releases/tag/v1.1.7) |
-|       `2024.9.4`        | [v1.1.7](../../releases/tag/v1.1.7) |
-|       `2024.8.13`       | [v1.1.6](../../releases/tag/v1.1.6) |
-|       `2024.6.18`       | [v1.1.5](../../releases/tag/v1.1.5) |
-|       `2024.3.05`       | [v1.1.4](../../releases/tag/v1.1.4) |
-|      `2023.11.28`       | [v1.1.3](../../releases/tag/v1.1.3) |
-|      `2023.10.24`       | [v1.1.0](../../releases/tag/v1.1.0) |
+| `18.0.0` (`2026.8.18`)  | [v1.3.1](https://github.com/astra1dev/AUnlocker/releases/tag/v1.3.1) |
+| `17.4.0` (`2026.6.5`)   | [v1.3.1](https://github.com/astra1dev/AUnlocker/releases/tag/v1.3.1) |
+| `17.3.0` (`2026.3.31`)  | [v1.3.0](https://github.com/astra1dev/AUnlocker/releases/tag/v1.3.0) |
+| `17.2.2` (`2026.3.17`)  | [v1.3.0](https://github.com/astra1dev/AUnlocker/releases/tag/v1.3.0) |
+| `17.2.1` (`2026.2.24`)  | [v1.3.0](https://github.com/astra1dev/AUnlocker/releases/tag/v1.3.0) |
+| `17.2.0` (`2026.2.17`)  | [v1.3.0](https://github.com/astra1dev/AUnlocker/releases/tag/v1.3.0) |
+| `17.1.0` (`2025.11.18`) | [v1.3.0](https://github.com/astra1dev/AUnlocker/releases/tag/v1.3.0) |
+| `17.0.1` (`2025.10.14`) | [v1.2.2](https://github.com/astra1dev/AUnlocker/releases/tag/v1.2.2) |
+|  `17.0.0` (`2025.9.9`)  | [v1.2.2](https://github.com/astra1dev/AUnlocker/releases/tag/v1.2.2) |
+| `16.1.0` (`2025.6.10`)  | [v1.2.2](https://github.com/astra1dev/AUnlocker/releases/tag/v1.2.2) |
+| `16.0.5` (`2025.5.20`)  | [v1.2.0](https://github.com/astra1dev/AUnlocker/releases/tag/v1.2.0) |
+| `16.0.2` (`2025.3.31`)  | [v1.1.8](https://github.com/astra1dev/AUnlocker/releases/tag/v1.1.8) |
+| `16.0.0` (`2025.3.25`)  | [v1.1.8](https://github.com/astra1dev/AUnlocker/releases/tag/v1.1.8) |
+|      `2024.11.26`       | [v1.1.7](https://github.com/astra1dev/AUnlocker/releases/tag/v1.1.7) |
+|      `2024.10.29`       | [v1.1.7](https://github.com/astra1dev/AUnlocker/releases/tag/v1.1.7) |
+|       `2024.9.4`        | [v1.1.7](https://github.com/astra1dev/AUnlocker/releases/tag/v1.1.7) |
+|       `2024.8.13`       | [v1.1.6](https://github.com/astra1dev/AUnlocker/releases/tag/v1.1.6) |
+|       `2024.6.18`       | [v1.1.5](https://github.com/astra1dev/AUnlocker/releases/tag/v1.1.5) |
+|       `2024.3.05`       | [v1.1.4](https://github.com/astra1dev/AUnlocker/releases/tag/v1.1.4) |
+|      `2023.11.28`       | [v1.1.3](https://github.com/astra1dev/AUnlocker/releases/tag/v1.1.3) |
+|      `2023.10.24`       | [v1.1.0](https://github.com/astra1dev/AUnlocker/releases/tag/v1.1.0) |
 
 # 💾 Installation
 ## 🪟 Windows
-- [Download](../../releases/latest) either `AUnlocker_v*_Steam_Itch.zip` or `AUnlocker_v*_EpicGames_MicrosoftStore_XboxApp.zip` depending on your edition of Among Us.
+- [Download](../../releases/latest) either `AUnlocker-86-bit.zip` or `AUnlocker-64-bit.zip` according to your Among Us Architecture.
+  To view if your Among Us is either x86 or x64 do the following:
+   1. Launch Among Us.
+   2. Press Ctrl + Shift + Esc to open your Task Manager.
+   3. Look for "Among Us" under the active processes list.
+	   - If it says Among Us (32-bit) or *Among Us.exe 32, you have the x86 version.
+	   - If it just says Among Us without any bit indicator, you have the x64 version.
+     
 - Extract the contents of the zip into your Among Us folder. You can find your Among Us folder like this:
   - **Steam:** Right-click Among Us in your library → <kbd>Manage</kbd> → <kbd>Browse local files</kbd>
   - **Epic Games:** Right-click Among Us in your library → <kbd>Manage</kbd> → click the small folder icon next to <kbd>Installation</kbd>
   - **Itch.io:** Open the Itch.io app → Right-click Among Us in your library → <kbd>Manage</kbd> → <kbd>Open folder in Explorer</kbd>.
   - **Xbox App / Microsoft Store:** Open the Xbox app → Right-click Among Us in your library → <kbd>Manage</kbd> → <kbd>Files</kbd> → <kbd>Browse...</kbd>
 - Your game folder should look like this after installation:
-<img src="https://github.com/UnderscoredScore/AUnlocker/assets/90265231/14226f03-a003-4efc-b27b-6df53fb394d6" width=410 height=240>
+<img src="https://github.com/astra1dev/AUnlocker/assets/90265231/14226f03-a003-4efc-b27b-6df53fb394d6" width=410 height=240>
 
 - Launch Among Us. The first launch will take **MUCH** longer, so don't worry if you have to wait a few minutes.
 
 ## 🐧 Linux
 - Make sure you are running Among Us under Proton (or Wine). On Steam you can check this by right-clicking Among Us in your library → <kbd>Properties</kbd> → <kbd>Compatibility</kbd> → <kbd>Force the use of a specific Steam Play compatibility tool</kbd>. Test different Proton versions if you're having issues launching the game.
-- Check out [this guide](https://docs.bepinex.dev/articles/advanced/proton_wine.html) to get BepInEx (the framework AUnlocker is built upon) working. Alternatively, if you are using Proton with Steam, you can specify the DLL override in the launch options (right-click Among Us in your library → <kbd>Properties</kbd> → <kbd>General</kbd> → <kbd>Launch Options</kbd>): `WINEDLLOVERRIDES="winhttp.dll=n,b" %command%` Then follow the steps for Windows.
+- Check out [this guide](https://docs.bepinex.dev/articles/advanced/proton_wine.html) to get BepInEx (the framework AUnlocker is built upon) working. Alternatively, if you are using Proton with Steam, you can specify the DLL override in the launch options (right-click Among Us in your library → <kbd>Properties</kbd> → <kbd>General</kbd> → <kbd>Launch Options</kbd>): `WINEDLLOVERRIDES="winhttp.dll=n,b" %command%` 
+
+- [Download](../../releases/latest) either `AUnlocker-86-bit.zip` or `AUnlocker-64-bit.zip` according to your Among Us Architecture.
+You can check the executable file directly from your Linux terminal using the standard file tool:
+ 1. Open your terminal.
+ 2. Navigate to your game's installation directory (e.g., inside your Steam library or your Heroic Games Launcher / Wine prefix path).
+ 3. Run the file command against the main executable
+ bash```
+   file "Among Us.exe"```
+ - If it says: PE32+ executable (GUI) x86-64, it is 64-bit (x64).
+ - If it says: PE32 executable (GUI) Intel 80386, it is 32-bit (x86).
+
 
 <hr>
 
