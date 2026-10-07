@@ -13,7 +13,6 @@ This release is compatible with Among Us version `19.0.0` (`2026.9.29`). It also
 ### Added
 
 - Add an on-demand GitHub Actions build that uploads versioned `AUnlocker_v<version>.dll`, `AUnlocker_Steam_v<version>.zip` (64-bit), and `AUnlocker_Itch_v<version>.zip` (32-bit) artifacts.
-- Add a built-in F1 options panel for editing AUnlocker settings, saved in `AUnlocker.cfg`.
 - Use the 64-bit package for Steam, Epic Games, Microsoft Store, and Xbox App on PC from Among Us 19.0.0 onward; retain the 32-bit package for itch.io.
 
 ### Changed

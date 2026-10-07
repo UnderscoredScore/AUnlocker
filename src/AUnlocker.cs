@@ -1,4 +1,3 @@
-using AUnlocker.Components;
 using BepInEx;
 using BepInEx.Logging;
 using BepInEx.Unity.IL2CPP;
@@ -20,7 +19,6 @@ public partial class AUnlocker : BasePlugin
     public new static ManualLogSource Log;
 
     // General
-    public static ConfigEntry<KeyCode> ReloadConfigKeybind;
     public static ConfigEntry<float> ButtonSize;
 
     // Account
@@ -60,7 +58,6 @@ public partial class AUnlocker : BasePlugin
         Log = base.Log;
 
         // General
-        ReloadConfigKeybind = Config.Bind("General", "ReloadConfigKeybind", KeyCode.F6, "The keyboard key used to reload the configuration file");
         ButtonSize = Config.Bind("General", "ButtonSize", 1f, "Resize the in-game buttons (Use, Kill, Report, etc.)\nSet to 1.0 to disable scaling");
         // Account
         UnlockGuest = Config.Bind("Account", "RemoveGuestStatus", false, "Remove guest restrictions (no custom name, no free chat, no friend list)");
@@ -105,8 +102,6 @@ public partial class AUnlocker : BasePlugin
             // using Unity.Services.Core;
             // AnalyticsService.Instance.OptOut();
         // More Info: https://discussions.unity.com/t/iap-privacy-issue/881743
-
-        AddComponent<KeybindListener>().Plugin = this;
     }
 }
 

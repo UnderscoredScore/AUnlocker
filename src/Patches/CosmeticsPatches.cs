@@ -14,35 +14,42 @@ public static class HatManager_Initialize
     {
         if (!AUnlocker.UnlockCosmetics.Value) return;
 
-        foreach (var bundle in (IEnumerable<BundleData>)__instance.AllBundles)
-        { bundle.Free = true; }
+        try
+        {
+            foreach (var bundle in (IEnumerable<BundleData>)__instance.AllBundles)
+            { bundle.Free = true; }
 
-        foreach (var featuredBundle in (IEnumerable<BundleData>)__instance.AllFeaturedBundles)
-        { featuredBundle.Free = true; }
+            foreach (var featuredBundle in (IEnumerable<BundleData>)__instance.AllFeaturedBundles)
+            { featuredBundle.Free = true; }
 
-        foreach (var featuredCube in (IEnumerable<CosmicubeData>)__instance.AllFeaturedCubes)
-        { featuredCube.Free = true; }
+            foreach (var featuredCube in (IEnumerable<CosmicubeData>)__instance.AllFeaturedCubes)
+            { featuredCube.Free = true; }
 
-        foreach (var featuredItem in (IEnumerable<CosmeticData>)__instance.AllFeaturedItems)
-        { featuredItem.Free = true; }
+            foreach (var featuredItem in (IEnumerable<CosmeticData>)__instance.AllFeaturedItems)
+            { featuredItem.Free = true; }
 
-        foreach (var hat in (IEnumerable<HatData>)__instance.AllHats)
-        { hat.Free = true; }
+            foreach (var hat in (IEnumerable<HatData>)__instance.AllHats)
+            { hat.Free = true; }
 
-        foreach (var nameplate in (IEnumerable<NamePlateData>)__instance.AllNamePlates)
-        { nameplate.Free = true; }
+            foreach (var nameplate in (IEnumerable<NamePlateData>)__instance.AllNamePlates)
+            { nameplate.Free = true; }
 
-        foreach (var pet in (IEnumerable<PetData>)__instance.AllPets)
-        { pet.Free = true; }
+            foreach (var pet in (IEnumerable<PetData>)__instance.AllPets)
+            { pet.Free = true; }
 
-        foreach (var skin in (IEnumerable<SkinData>)__instance.AllSkins)
-        { skin.Free = true; }
+            foreach (var skin in (IEnumerable<SkinData>)__instance.AllSkins)
+            { skin.Free = true; }
 
-        foreach (var starBundle in (IEnumerable<StarBundle>)__instance.AllStarBundles)
-        { starBundle.price = 0; }
+            foreach (var starBundle in (IEnumerable<StarBundle>)__instance.AllStarBundles)
+            { starBundle.price = 0; }
 
-        foreach (var visor in (IEnumerable<VisorData>)__instance.AllVisors)
-        { visor.Free = true; }
+            foreach (var visor in (IEnumerable<VisorData>)__instance.AllVisors)
+            { visor.Free = true; }
+        }
+        catch (System.Exception exception)
+        {
+            AUnlocker.Log.LogError($"Could not unlock cosmetics: {exception}");
+        }
     }
 }
 

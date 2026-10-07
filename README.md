@@ -53,7 +53,7 @@
   - No limits on game host options (e.g. amount of impostors)
 
 > [!NOTE]
-> Press `F1` in-game to open AUnlocker's options panel. Settings are saved in `[YOUR_AMONG_US_FOLDER]/BepInEx/config/AUnlocker.cfg`.
+> Configure AUnlocker by editing `[YOUR_AMONG_US_FOLDER]/BepInEx/config/AUnlocker.cfg`. Restart the game for changes to take effect.
 >
 > `💣 Unsafe` Features can get you kicked by the anti-cheat. Use them with caution.
 
@@ -94,7 +94,7 @@ The table below lists the most recent AUnlocker release for each Among Us versio
 # 💾 Installation
 ## 🪟 Windows
 - Find your Among Us version in the [Releases](../../releases) table above and open the matching AUnlocker release. Download `AUnlocker-64-bit.zip` for Steam, Epic Games, Microsoft Store, or Xbox App on PC; download `AUnlocker-86-bit.zip` for itch.io.
-- To build a version that is not published as a release, run the **Build** workflow from the GitHub **Actions** page. Its versioned artifacts are `AUnlocker_Steam_v<version>.zip` (64-bit), `AUnlocker_Itch_v<version>.zip` (32-bit), and `AUnlocker_v<version>.dll` (for an existing BepInEx installation). The options panel is built into AUnlocker and works with either platform zip or a DLL-only install.
+- To build a version that is not published as a release, run the **Build** workflow from the GitHub **Actions** page. Its versioned artifacts are `AUnlocker_Steam_v<version>.zip` (64-bit), `AUnlocker_Itch_v<version>.zip` (32-bit), and `AUnlocker_v<version>.dll` (for an existing BepInEx installation).
 - Extract the contents of the zip into your Among Us folder. You can find your Among Us folder like this:
   - **Steam:** Right-click Among Us in your library → <kbd>Manage</kbd> → <kbd>Browse local files</kbd>
   - **Epic Games:** Right-click Among Us in your library → <kbd>Manage</kbd> → click the small folder icon next to <kbd>Installation</kbd>
