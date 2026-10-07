@@ -1,0 +1,59 @@
+name: Build
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Read project version
+        id: version
+        shell: pwsh
+        run: |
+          [xml]$project = Get-Content -Raw 'src/AUnlocker.csproj'
+          $version = $project.Project.PropertyGroup.VersionPrefix
+          "version=$version" >> $env:GITHUB_OUTPUT
+
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 6.x
+
+      - name: Build AUnlocker
+        run: dotnet build -c Release
+
+      - name: Upload AUnlocker.dll artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: AUnlocker_v${{ steps.version.outputs.version }}.dll
+          path: src/bin/Release/net6.0/AUnlocker.dll
+          if-no-files-found: error
+
+      - name: Download and extract BepInEx
+        run: |
+          wget -O BepInEx_x64.zip 'https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.785%2B6abdba4.zip'
+          unzip BepInEx_x64.zip -d BepInEx_x64
+          wget -O BepInEx_x86.zip 'https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.785%2B6abdba4.zip'
+          unzip BepInEx_x86.zip -d BepInEx_x86
+          wget -O ConfigurationManager.zip 'https://github.com/BepInEx/BepInEx.ConfigurationManager/releases/download/v19.0/BepInEx.ConfigurationManager_IL2CPP_v19.0.zip'
+          unzip ConfigurationManager.zip -d ConfigurationManager
+          cp -R ConfigurationManager/BepInEx/plugins/ConfigurationManager BepInEx_x64/BepInEx/plugins/
+          cp -R ConfigurationManager/BepInEx/plugins/ConfigurationManager BepInEx_x86/BepInEx/plugins/
+          cp src/bin/Release/net6.0/AUnlocker.dll BepInEx_x64/BepInEx/plugins/
+          cp src/bin/Release/net6.0/AUnlocker.dll BepInEx_x86/BepInEx/plugins/
+
+      - name: Upload AUnlocker Itch artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: AUnlocker_Itch_v${{ steps.version.outputs.version }}.zip
+          path: BepInEx_x86
+          if-no-files-found: error
+
+      - name: Upload AUnlocker Steam artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: AUnlocker_Steam_v${{ steps.version.outputs.version }}.zip
+          path: BepInEx_x64
+          if-no-files-found: error

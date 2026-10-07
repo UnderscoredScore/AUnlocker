@@ -53,7 +53,7 @@
   - No limits on game host options (e.g. amount of impostors)
 
 > [!NOTE]
-> Features can be individually enabled & disabled by editing the file `[YOUR_AMONG_US_FOLDER]/BepInEx/config/AUnlocker.cfg`
+> Press `F1` in-game to open the BepInEx ConfigurationManager and change AUnlocker settings. It is included in the downloadable platform packages. If you use only `AUnlocker.dll` with an existing BepInEx installation, install the [IL2CPP ConfigurationManager](https://github.com/BepInEx/BepInEx.ConfigurationManager/releases/latest) too. Settings are still saved in `[YOUR_AMONG_US_FOLDER]/BepInEx/config/AUnlocker.cfg`.
 >
 > `💣 Unsafe` Features can get you kicked by the anti-cheat. Use them with caution.
 
@@ -67,6 +67,7 @@ The table below lists the most recent AUnlocker release for each Among Us versio
 
 |    Among Us Version     |          AUnlocker Version          |
 |:-----------------------:|:-----------------------------------:|
+| `19.0.0` (`2026.9.29`)  | [v1.3.3](../../releases/tag/v1.3.3) |
 | `19.0.0` (`2026.9.29`)  | [v1.3.2](../../releases/tag/v1.3.2) |
 | `18.0.0` (`2026.8.18`)  | [v1.3.1](https://github.com/astra1dev/AUnlocker/releases/tag/v1.3.1) |
 | `17.4.0` (`2026.6.5`)   | [v1.3.1](https://github.com/astra1dev/AUnlocker/releases/tag/v1.3.1) |
@@ -92,14 +93,8 @@ The table below lists the most recent AUnlocker release for each Among Us versio
 
 # 💾 Installation
 ## 🪟 Windows
-- [Download](../../releases/latest) either `AUnlocker-86-bit.zip` or `AUnlocker-64-bit.zip` according to your Among Us Architecture.
-  To view if your Among Us is either x86 or x64 do the following:
-   1. Launch Among Us.
-   2. Press Ctrl + Shift + Esc to open your Task Manager.
-   3. Look for "Among Us" under the active processes list.
-	   - If it says Among Us (32-bit) or *Among Us.exe 32, you have the x86 version.
-	   - If it just says Among Us without any bit indicator, you have the x64 version.
-     
+- Find your Among Us version in the [Releases](../../releases) table above and open the matching AUnlocker release. Download `AUnlocker-64-bit.zip` for Steam, Epic Games, Microsoft Store, or Xbox App on PC; download `AUnlocker-86-bit.zip` for itch.io.
+- To build a version that is not published as a release, run the **Build** workflow from the GitHub **Actions** page. Its versioned artifacts are `AUnlocker_Steam_v<version>.zip` (64-bit), `AUnlocker_Itch_v<version>.zip` (32-bit), and `AUnlocker_v<version>.dll` (for an existing BepInEx installation). Both platform zips include the in-game settings menu; DLL-only installs need ConfigurationManager installed separately.
 - Extract the contents of the zip into your Among Us folder. You can find your Among Us folder like this:
   - **Steam:** Right-click Among Us in your library → <kbd>Manage</kbd> → <kbd>Browse local files</kbd>
   - **Epic Games:** Right-click Among Us in your library → <kbd>Manage</kbd> → click the small folder icon next to <kbd>Installation</kbd>
@@ -114,15 +109,7 @@ The table below lists the most recent AUnlocker release for each Among Us versio
 - Make sure you are running Among Us under Proton (or Wine). On Steam you can check this by right-clicking Among Us in your library → <kbd>Properties</kbd> → <kbd>Compatibility</kbd> → <kbd>Force the use of a specific Steam Play compatibility tool</kbd>. Test different Proton versions if you're having issues launching the game.
 - Check out [this guide](https://docs.bepinex.dev/articles/advanced/proton_wine.html) to get BepInEx (the framework AUnlocker is built upon) working. Alternatively, if you are using Proton with Steam, you can specify the DLL override in the launch options (right-click Among Us in your library → <kbd>Properties</kbd> → <kbd>General</kbd> → <kbd>Launch Options</kbd>): `WINEDLLOVERRIDES="winhttp.dll=n,b" %command%` 
 
-- [Download](../../releases/latest) either `AUnlocker-86-bit.zip` or `AUnlocker-64-bit.zip` according to your Among Us Architecture.
-You can check the executable file directly from your Linux terminal using the standard file tool:
- 1. Open your terminal.
- 2. Navigate to your game's installation directory (e.g., inside your Steam library or your Heroic Games Launcher / Wine prefix path).
- 3. Run the file command against the main executable
- bash```
-   file "Among Us.exe"```
- - If it says: PE32+ executable (GUI) x86-64, it is 64-bit (x64).
- - If it says: PE32 executable (GUI) Intel 80386, it is 32-bit (x86).
+- Find your Among Us version in the [Releases](../../releases) table above and open the matching AUnlocker release. Download `AUnlocker-64-bit.zip` for Steam on Among Us `19.0.0` and later, or `AUnlocker-86-bit.zip` for itch.io. Under Proton or Wine, install the matching package into the game folder.
 
 
 <hr>

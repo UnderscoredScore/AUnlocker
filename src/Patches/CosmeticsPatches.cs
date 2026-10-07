@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using HarmonyLib;
 
@@ -7,16 +6,6 @@ namespace AUnlocker.Patches;
 [HarmonyPatch(typeof(HatManager), nameof(HatManager.Initialize))]
 public static class HatManager_Initialize
 {
-
-    /// <summary>
-    /// Ensure the patch is not applied on Android.
-    /// </summary>
-    /// <returns>True if the patch should be applied; otherwise, false.</returns>
-    public static bool Prepare()
-    {
-        return !OperatingSystem.IsAndroid();
-    }
-
     /// <summary>
     /// Unlock all cosmetics by setting their price to 0 and marking them as free.
     /// </summary>
@@ -78,15 +67,6 @@ public static class PlayerControl_FixedUpdate
 [HarmonyPatch(typeof(PlayerPurchasesData), nameof(PlayerPurchasesData.GetPurchase))]
 public static class PlayerPurchasesData_GetPurchase
 {
-    /// <summary>
-    /// Ensure the patch is not applied on Android.
-    /// </summary>
-    /// <returns>True if the patch should be applied; otherwise, false.</returns>
-    public static bool Prepare()
-    {
-        return !OperatingSystem.IsAndroid();
-    }
-
     public static bool Prefix(PlayerPurchasesData __instance, string itemKey, string bundleKey, ref bool __result)
     {
         if (!AUnlocker.UnlockCosmetics.Value) return true;
