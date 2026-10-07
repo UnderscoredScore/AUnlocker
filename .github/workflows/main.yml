@@ -37,10 +37,6 @@ jobs:
           unzip BepInEx_x64.zip -d BepInEx_x64
           wget -O BepInEx_x86.zip 'https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.785%2B6abdba4.zip'
           unzip BepInEx_x86.zip -d BepInEx_x86
-          wget -O ConfigurationManager.zip 'https://github.com/BepInEx/BepInEx.ConfigurationManager/releases/download/v19.0/BepInEx.ConfigurationManager_IL2CPP_v19.0.zip'
-          unzip ConfigurationManager.zip -d ConfigurationManager
-          cp -R ConfigurationManager/BepInEx/plugins/ConfigurationManager BepInEx_x64/BepInEx/plugins/
-          cp -R ConfigurationManager/BepInEx/plugins/ConfigurationManager BepInEx_x86/BepInEx/plugins/
           cp src/bin/Release/net6.0/AUnlocker.dll BepInEx_x64/BepInEx/plugins/
           cp src/bin/Release/net6.0/AUnlocker.dll BepInEx_x86/BepInEx/plugins/
 
