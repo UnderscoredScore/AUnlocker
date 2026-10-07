@@ -93,8 +93,7 @@ The table below lists the most recent AUnlocker release for each Among Us versio
 
 # 💾 Installation
 ## 🪟 Windows
-- Find your Among Us version in the [Releases](../../releases) table above and open the matching AUnlocker release. Download `AUnlocker-64-bit.zip` for Steam, Epic Games, Microsoft Store, or Xbox App on PC; download `AUnlocker-86-bit.zip` for itch.io.
-- To build a version that is not published as a release, run the **Build** workflow from the GitHub **Actions** page. Its versioned artifacts are `AUnlocker_Steam_v<version>.zip` (64-bit), `AUnlocker_Itch_v<version>.zip` (32-bit), and `AUnlocker_v<version>.dll` (for an existing BepInEx installation).
+- Find your Among Us version in the [Releases](../../releases) table above and open the matching AUnlocker release. Download `AUnlocker_Steam_v*.zip` for Steam, Epic Games, Microsoft Store, or Xbox App on PC; download `AUnlocker_Itch_v*.zip` for itch.io.
 - Extract the contents of the zip into your Among Us folder. You can find your Among Us folder like this:
   - **Steam:** Right-click Among Us in your library → <kbd>Manage</kbd> → <kbd>Browse local files</kbd>
   - **Epic Games:** Right-click Among Us in your library → <kbd>Manage</kbd> → click the small folder icon next to <kbd>Installation</kbd>
@@ -109,7 +108,7 @@ The table below lists the most recent AUnlocker release for each Among Us versio
 - Make sure you are running Among Us under Proton (or Wine). On Steam you can check this by right-clicking Among Us in your library → <kbd>Properties</kbd> → <kbd>Compatibility</kbd> → <kbd>Force the use of a specific Steam Play compatibility tool</kbd>. Test different Proton versions if you're having issues launching the game.
 - Check out [this guide](https://docs.bepinex.dev/articles/advanced/proton_wine.html) to get BepInEx (the framework AUnlocker is built upon) working. Alternatively, if you are using Proton with Steam, you can specify the DLL override in the launch options (right-click Among Us in your library → <kbd>Properties</kbd> → <kbd>General</kbd> → <kbd>Launch Options</kbd>): `WINEDLLOVERRIDES="winhttp.dll=n,b" %command%` 
 
-- Find your Among Us version in the [Releases](../../releases) table above and open the matching AUnlocker release. Download `AUnlocker-64-bit.zip` for Steam on Among Us `19.0.0` and later, or `AUnlocker-86-bit.zip` for itch.io. Under Proton or Wine, install the matching package into the game folder.
+- Find your Among Us version in the [Releases](../../releases) table above and open the matching AUnlocker release. Download `AUnlocker_Steam_v1.3.3.zip` for Steam on Among Us `19.0.0` and later, or `AUnlocker_Itch_v*.zip` for itch.io. Under Proton or Wine, install the matching package into the game folder.
 
 
 <hr>
